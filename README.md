@@ -1,0 +1,2 @@
+# smart-traffic-pollution-predictionETsimulation
+ Un système intelligent pour la prédiction des congestions routières et des niveaux de pollution, avec optimisation et simulation des feux tricolores. Ce projet utilise des algorithmes de machine learning et d’optimisation pour analyser le trafic, prévoir les embouteillages et la pollution, et ajuster dynamiquement les cycles des feux tricolores. Une simulation de trafic avec SUMOest intégrée pour valider les recommandations. , avec une visualisation interactive des résultats.
