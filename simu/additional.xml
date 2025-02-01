@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- Traffic Light Programs -->
+    <tlLogic id="junction1" type="static" programID="0" offset="0">
+        <phase duration="20" state="GGrrGGrr"/> <!-- Green -->
+        <phase duration="10" state="yyrryyrr"/> <!-- Yellow -->
+        <phase duration="90" state="rrGGrrGG"/> <!-- Red -->
+        <phase duration="10" state="rryyrryy"/> <!-- Yellow -->
+    </tlLogic>
+
+    <tlLogic id="junction2" type="static" programID="0" offset="0">
+        <phase duration="20" state="GGrrGGrr"/>
+        <phase duration="10" state="yyrryyrr"/>
+        <phase duration="90" state="rrGGrrGG"/>
+        <phase duration="10" state="rryyrryy"/>
+    </tlLogic>
+
+    <tlLogic id="junction3" type="static" programID="0" offset="0">
+        <phase duration="20" state="GGrrGGrr"/>
+        <phase duration="10" state="yyrryyrr"/>
+        <phase duration="90" state="rrGGrrGG"/>
+        <phase duration="10" state="rryyrryy"/>
+    </tlLogic>
+
+    <tlLogic id="junction4" type="static" programID="0" offset="0">
+        <phase duration="20" state="GGrrGGrr"/>
+        <phase duration="10" state="yyrryyrr"/>
+        <phase duration="90" state="rrGGrrGG"/>
+        <phase duration="10" state="rryyrryy"/>
+    </tlLogic>
+</additional>

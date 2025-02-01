@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <!-- Incoming edges - adjusted lanes based on traffic volume -->
+    <edge id="1to1" from="1i" to="junction1" numLanes="3" speed="13.89" priority="1"/>
+    <edge id="2to2" from="2i" to="junction2" numLanes="2" speed="13.89" priority="1"/>
+    <edge id="3to3" from="3i" to="junction3" numLanes="2" speed="13.89" priority="1"/>
+    <!-- Junction 4 with single lane due to low traffic -->
+    <edge id="4to4" from="4i" to="junction4" numLanes="1" speed="13.89" priority="2"/>
+    
+    <!-- Connecting roads between junctions -->
+    <edge id="1to2" from="junction1" to="junction2" numLanes="2" speed="13.89" priority="1"/>
+    <edge id="2to1" from="junction2" to="junction1" numLanes="2" speed="13.89" priority="1"/>
+    <edge id="1to3" from="junction1" to="junction3" numLanes="2" speed="13.89" priority="1"/>
+    <edge id="3to1" from="junction3" to="junction1" numLanes="2" speed="13.89" priority="1"/>
+    <!-- Roads connecting to Junction 4 with priority rules -->
+    <edge id="2to4" from="junction2" to="junction4" numLanes="1" speed="13.89" priority="2"/>
+    <edge id="4to2" from="junction4" to="junction2" numLanes="1" speed="13.89" priority="2"/>
+    <edge id="3to4" from="junction3" to="junction4" numLanes="1" speed="13.89" priority="2"/>
+    <edge id="4to3" from="junction4" to="junction3" numLanes="1" speed="13.89" priority="2"/>
+</edges>

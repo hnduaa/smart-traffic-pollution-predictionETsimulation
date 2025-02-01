@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Updated vehicle type definitions with proper traffic light behavior -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="16.67" jmIgnoreKeepClearTime="-1" jmDriveAfterRedTime="-1"/>
+    
+    <vType id="passenger" length="5" minGap="2.5" maxSpeed="16.67" accel="2.6" decel="4.5" sigma="0.5" color="0,0,255" jmIgnoreKeepClearTime="-1" jmDriveAfterRedTime="-1"/>
+    
+    <vType id="taxi" length="5" minGap="2.5" maxSpeed="16.67" accel="2.9" decel="4.5" sigma="0.5" color="255,255,0" jmIgnoreKeepClearTime="-1" jmDriveAfterRedTime="-1"/>
+    
+    <vType id="bus" length="12" minGap="3" maxSpeed="13.89" accel="2.0" decel="4.0" sigma="0.5" color="255,0,0" 
+           jmIgnoreKeepClearTime="-1" 
+           jmDriveAfterRedTime="-1"
+           impatience="-1.0"
+           speedDev="0"
+           lcAssertive="0"
+           lcImpatience="0"/>
+    
+    <!-- Routes remain the same -->
+    <route id="route1a" edges="1to1 1to2 2to4"/>
+    <route id="route1b" edges="1to1 1to3 3to4"/>
+    <route id="route1c" edges="1to1 1to2"/>
+    
+    <route id="route2a" edges="2to2 2to1 1to3"/>
+    <route id="route2b" edges="2to2 2to4 4to3"/>
+    <route id="route2c" edges="2to2 2to1"/>
+    
+    <route id="route3a" edges="3to3 3to4 4to2"/>
+    <route id="route3b" edges="3to3 3to1 1to2"/>
+    <route id="route3c" edges="3to3 3to4"/>
+    
+    <route id="route4a" edges="4to4 4to3 3to1"/>
+    <route id="route4b" edges="4to4 4to2 2to1"/>
+    <route id="route4c" edges="4to4 4to3"/>
+    
+    <!-- Flows remain the same -->
+    <flow id="flow1a" type="passenger" route="route1a" begin="0" end="3600" number="180" departLane="random"/>
+    <flow id="flow1b" type="taxi" route="route1b" begin="0" end="3600" number="160" departLane="random"/>
+    <flow id="flow1c" type="bus" route="route1c" begin="0" end="3600" number="112" departLane="random"/>
+    
+    <flow id="flow2a" type="passenger" route="route2a" begin="0" end="3600" number="60" departLane="random"/>
+    <flow id="flow2b" type="taxi" route="route2b" begin="0" end="3600" number="50" departLane="random"/>
+    <flow id="flow2c" type="car" route="route2c" begin="0" end="3600" number="33" departLane="random"/>
+    
+    <flow id="flow3a" type="passenger" route="route3a" begin="0" end="3600" number="58" departLane="random"/>
+    <flow id="flow3b" type="taxi" route="route3b" begin="0" end="3600" number="48" departLane="random"/>
+    <flow id="flow3c" type="car" route="route3c" begin="0" end="3600" number="32" departLane="random"/>
+    
+    <flow id="flow4a" type="passenger" route="route4a" begin="0" end="3600" number="30" departLane="random"/>
+    <flow id="flow4b" type="taxi" route="route4b" begin="0" end="3600" number="25" departLane="random"/>
+    <flow id="flow4c" type="car" route="route4c" begin="0" end="3600" number="18" departLane="random"/>
+</routes>

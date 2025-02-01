@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <!-- Main Junctions - Only 1,2,3 with traffic lights -->
+    <node id="junction1" x="0.0" y="0.0" type="traffic_light" tlType="static"/>
+    <node id="junction2" x="200.0" y="0.0" type="traffic_light" tlType="static"/>
+    <node id="junction3" x="0.0" y="200.0" type="traffic_light" tlType="static"/>
+    <!-- Junction 4 changed to priority junction (no traffic lights) -->
+    <node id="junction4" x="200.0" y="200.0" type="priority"/>
+    
+    <!-- Edge Nodes -->
+    <node id="1i" x="-100.0" y="0.0" type="priority"/>
+    <node id="2i" x="300.0" y="0.0" type="priority"/>
+    <node id="3i" x="0.0" y="300.0" type="priority"/>
+    <node id="4i" x="200.0" y="300.0" type="priority"/>
+</nodes>
